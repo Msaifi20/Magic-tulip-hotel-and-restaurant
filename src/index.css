@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Light Mode Styling with an elegant, modern boutique design */
+.light {
+  background-color: #fafaf9 !important;
+  color: #1c1917 !important;
+}
+
+/* Base elements smooth transitions for premium theme shifting */
+.light, 
+.light section, 
+.light div, 
+.light h1, 
+.light h2, 
+.light h3, 
+.light h4, 
+.light p, 
+.light span, 
+.light button, 
+.light aside, 
+.light input, 
+.light textarea {
+  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Background overrides in Light Mode */
+.light .bg-stone-900 {
+  background-color: #f5f5f4 !important; /* stone-100 */
+}
+.light .bg-stone-950 {
+  background-color: #fafaf9 !important; /* stone-50 */
+}
+.light .bg-stone-950\/80,
+.light .bg-stone-950\/70,
+.light .bg-stone-900\/80 {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+}
+.light .bg-stone-900\/40 {
+  background-color: rgba(245, 245, 244, 0.75) !important;
+}
+.light .bg-stone-850,
+.light .bg-stone-850\/80 {
+  background-color: #e7e5e4 !important; /* stone-200 */
+}
+
+/* Keep original dark ambient aesthetic on Hero section */
+.light #hero {
+  background-color: #0c0a09 !important; /* stone-950 dark background */
+}
+.light #hero .text-white,
+.light #hero h1,
+.light #hero h2 {
+  color: #ffffff !important;
+}
+.light #hero p,
+.light #hero span {
+  color: #d6d3d1 !important;
+}
+.light #hero button {
+  color: #1c1917 !important;
+}
+
+/* Border overrides */
+.light .border-stone-800,
+.light .border-stone-850,
+.light .border-stone-900,
+.light .border-white\/10,
+.light .border-white\/15 {
+  border-color: #e7e5e4 !important; /* stone-200 */
+}
+
+/* Text overrides */
+.light .text-white,
+.light .text-stone-100,
+.light .text-stone-200 {
+  color: #1c1917 !important; /* stone-900 */
+}
+.light .text-stone-300 {
+  color: #292524 !important; /* stone-800 */
+}
+.light .text-stone-400 {
+  color: #57534e !important; /* stone-600 */
+}
+.light .text-stone-500 {
+  color: #78716c !important; /* stone-500 */
+}
+
+/* Refined amber contrasts for better light mode readability */
+.light .text-amber-500 {
+  color: #d97706 !important; /* amber-600 */
+}
+.light .text-amber-400 {
+  color: #b45309 !important; /* amber-700 */
+}
+.light .hover\:text-amber-400:hover {
+  color: #d97706 !important;
+}
+.light .hover\:text-white:hover {
+  color: #1c1917 !important;
+}
+.light .bg-amber-500 {
+  background-color: #d97706 !important; /* amber-600 */
+  color: #ffffff !important;
+}
+.light .bg-amber-500 .text-stone-950 {
+  color: #ffffff !important;
+}
+.light .hover\:bg-amber-400:hover {
+  background-color: #b45309 !important; /* amber-700 */
+}
+
+/* Inputs and forms in light mode */
+.light input,
+.light textarea,
+.light select {
+  background-color: #ffffff !important;
+  color: #1c1917 !important;
+  border-color: #d6d3d1 !important;
+}
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #a8a29e !important;
+}
+
+/* Category sidebar active vs idle states */
+.light button[id^="sub-cat-side-"]:not(.bg-amber-500) {
+  background-color: #ffffff !important;
+  border-color: #e7e5e4 !important;
+  color: #44403c !important;
+}
+.light button[id^="sub-cat-side-"]:not(.bg-amber-500):hover {
+  background-color: #f5f5f4 !important;
+  color: #1c1917 !important;
+  border-color: #d6d3d1 !important;
+}
+
+/* Custom interactive drinks tab inside DrinksMenu */
+.light button[id^="drinks-tab-"]:not(.bg-amber-600) {
+  color: #57534e !important;
+}
+.light button[id^="drinks-tab-"]:not(.bg-amber-600):hover {
+  color: #1c1917 !important;
+}
+
+/* Modals and Detailed Views overlay */
+.light .fixed.inset-0.z-50 .bg-stone-950,
+.light .fixed.inset-0.z-50 .bg-stone-900,
+.light .fixed.inset-0.z-50 .bg-stone-900\/40 {
+  background-color: #ffffff !important;
+  border-color: #e7e5e4 !important;
+}
+
+/* Gourmet basket specific elements */
+.light #basket-drawer-panel,
+.light #basket-drawer-panel div {
+  color: #1c1917 !important;
+}
+.light #basket-drawer-panel .bg-stone-950 {
+  background-color: #ffffff !important;
+}
+.light #basket-drawer-panel .bg-stone-900 {
+  background-color: #f5f5f4 !important;
+}
+
+

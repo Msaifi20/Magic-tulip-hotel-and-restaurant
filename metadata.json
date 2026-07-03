@@ -1,0 +1,6 @@
+{
+  "name": "Magic Tulip Hotel and Restaurant",
+  "description": "An exquisite, fully bilingual food and bar menu application for the luxury Magic Tulip Restaurant & Bar. Featuring dedicated gourmet food and artisan drinks sections, interactive ingredient highlights, dynamic filter systems, a customer review center, and bespoke micro-interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
